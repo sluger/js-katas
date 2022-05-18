@@ -11,9 +11,7 @@ describe('`[].entries()` returns an iterator object with all entries', function(
   it('empty elements contain the value `undefined`', function() {
     const arr = ['one'];
     arr[2] = 'three';
-    const iter = arr.entries();
-    const first = iter.next();
-    const secondValue = iter.next().value;
+    const secondValue = [...arr.entries()][1];
     assert.deepEqual(secondValue, [1, void 0]);
   });
   describe('returns an iterable', function() {
