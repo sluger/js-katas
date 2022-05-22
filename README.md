@@ -1,2 +1,2 @@
 # jskatas
-Solutions to https://jskatas.org/
+My solutions to some tests on https://jskatas.org/
